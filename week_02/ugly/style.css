@@ -1,0 +1,10 @@
+/* Select tags directly to apply styles */
+body {
+    background-color: #00FF00;
+    color: #444444;
+    } /* This tag selector applies styles globally to the entire <body> container */
+    blockquote {
+    border-left: 5px solid #1453ff;
+    padding: 20px;
+} /* This tag selector applies styles to all <blockquote> citation boxes on the page */
+        
