@@ -1,17 +1,17 @@
 
 body {
-    /* These tags changes the color of the background and text color. I just went with something that looked */
+    /* These tags changes the color of the background and text color. I just went with something that seemed to look goofy. */
     background-color: #00FF00;
     color: #444444;
     background-image: url('background.jpg');
     background-size: cover; 
     background-position: center; 
-    h1{color: #ff1100}
-    h2{color: rgb(29, 50, 145)}
+    h1{color: #ff1100} /* Makes h1 red. */
+    h2{color: rgb(29, 50, 145)} /* Makes h2 dark blue.*/
     } 
     blockquote {
     color: rgba(240, 40, 0, 0.5);
     border-left: 5px solid #1453ff;
     padding: 20px;
-    } /* These tags adjust the border color and pad the distance out.  */
+    } /* These tags adjust the quoted text color, border color, and pad the distance out.  */
         
