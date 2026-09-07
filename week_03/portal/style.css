@@ -1,6 +1,7 @@
 .gallery-pic {
 	display: block;
     max-width: 300px;
+    border-radius: 8px;
 }
 .button{
     background-color: greenyellow;
