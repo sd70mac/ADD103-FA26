@@ -3,11 +3,13 @@ table {
     font-family: 'Times New Roman', Times, serif;
 }
 th, td {
-    border: : 1px solid #dddddd;
+            border: 1px solid #dddddd;
             width: 60px;
             height: 60px;
             text-align: center;
             vertical-align: middle;
+            max-width: 30px; height: auto;
+
 }
 th {
             background-color: hsl(141, 76%, 38%);
