@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+th, td {
+    border: : 1px solid #ccc;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            vertical-align: middle;
+}
+th {
+            background-color: hsl(141, 76%, 38%);
+        }
+        .empty {
+            background-color: hsl(0, 0%, 98%);
+        }
