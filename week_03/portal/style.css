@@ -1,8 +1,11 @@
 .gallery-pic {
 	display: block;
     max-width: 300px;
+}
+img {
     border-radius: 8px;
 }
+
 .button{
     background-color: greenyellow;
     border: none;
