@@ -1,5 +1,7 @@
 :root {
     --brand-color: #33832c;
+    --second-color: #2c4683;
+    --third-color: #e80c08;
 } /* This is creating a variable named --brand-color at the root level (accessible everywhere) */
 * {
     box-sizing: border-box; /* Spacing reset */
