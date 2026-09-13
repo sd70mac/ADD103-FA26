@@ -3,6 +3,8 @@
     --brand-color: #33832c;
     --second-color: #2c4683;
     --third-color: #e80c08;
+    --fourth-color: #333;
+    --fifth-color: #fff;
 } 
 * {
     box-sizing: border-box; /* Spacing reset */
@@ -24,8 +26,8 @@
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 180px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--fourth-color);
+    color: var(--fifth-color);
     text-align: center;
     border-radius: 6px;
     padding: 8px;
