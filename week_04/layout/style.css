@@ -16,6 +16,7 @@
     border-radius: 8px; /* Rounded corners */
     padding: 20px;
     margin: 1%;
+    text-shadow: 7px 2px 4px rgba(0,0,0,0.36); /*Source:  https://www.w3schools.com/tools/tool_text_shadow.php*/
 }
 .tooltip {
     position: relative;
