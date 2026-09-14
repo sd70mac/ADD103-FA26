@@ -5,6 +5,7 @@
     --third-color: #e80c08;
     --fourth-color: #333;
     --fifth-color: #fff;
+    --card-radius: 6px;
 } 
 * {
     box-sizing: border-box; /* Spacing reset */
@@ -30,7 +31,7 @@
     background-color: var(--fourth-color);
     color: var(--fifth-color);
     text-align: center;
-    border-radius: 6px;
+    border-radius: var(--card-radius);
     padding: 8px;
     position: absolute;
     bottom: 125%;
@@ -43,3 +44,30 @@
     visibility: visible;
     opacity: 1;
 } /* This targets the nested .tooltiptext child element ONLY when the parent .tooltip element is hovered over */
+
+/* COMPONENT: semantic article cards */
+.card {
+    /* display: block; */
+    /* ← try this: cards stack full-width, one per row */
+    display: inline-block;
+    /* ← active: cards sit side-by-side */
+    vertical-align: top;
+    /* width: 48%; */
+    /* ← BROKEN: try uncommenting this to see the wrap */
+    width: 47%;
+    /* ← FIX: 47% leaves room for the whitespace character */
+    border: 1px solid var(--third-color);
+    border-radius: var(--card-radius);
+    padding: 20px;
+    margin: var(--gap);
+}
+
+/* Forces all card images to the same square size regardless of original dimensions */
+.card-header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* crops to fill the box without stretching */
+    display: block;
+    margin: 0 auto 10px;
+}
