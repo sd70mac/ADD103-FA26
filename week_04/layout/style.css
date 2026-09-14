@@ -11,7 +11,7 @@
 } /* The asterisk (*) is a universal selector targeting all tags; box-sizing makes width calculations include border and padding */
 .column-card {
     display: inline-block;
-    width: 48%;
+    width: 47%;
     border: 4px solid var(--third-color);
     border-radius: 8px; /* Rounded corners */
     padding: 20px;
