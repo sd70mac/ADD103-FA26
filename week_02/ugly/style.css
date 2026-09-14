@@ -4,11 +4,14 @@ body {
     background-color: #00FF00;
     color: #444444;
     background-image: url('background.jpg');
-    background-size: cover; 
+    background-size: 1024px 768px; 
+    background-repeat: no-repeat;
     background-position: center; 
-    h1{color: #ff1100} /* Makes h1 red. */
-    h2{color: rgb(29, 50, 145)} /* Makes h2 dark blue.*/
     } 
+    h1{color: #ff1100} /* Makes h1 red. */
+    
+    h2{color: rgb(29, 50, 145)} /* Makes h2 dark blue.*/
+    
     blockquote {
     color: rgba(240, 40, 0, 0.5);
     border-left: 5px solid #1453ff;
