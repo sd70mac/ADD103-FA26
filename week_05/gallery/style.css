@@ -1,0 +1,72 @@
+/*
+  using the css3 generator at
+  https://css3generator.com/
+  for effects
+*/
+
+/* 🛠️ box-sizing keeps padding inside the width calculation. */
+*{
+  box-sizing: border-box;
+}
+
+/* 🎨 CSS variables store colors in one place. */
+:root{
+  --primary-dark: rgb(14, 23, 18);
+  --accent:rgb(5, 96, 63);
+  --primary-light: rgb(170, 184, 130);
+}
+
+/* 🖥️ The body sets the page background color. */
+body{
+  background-color:var(--primary-dark);
+}
+
+/* 📦 display: flex turns this into a flex container. */
+.flexbox-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+/* 🧩 These are the flex items. Margin and padding create space between them. */
+.flexbox-container div {
+  background-color: var(--primary-light);
+  margin: 10px;
+  padding: 20px;
+  font-size: 24px;
+  flex-wrap:wrap;
+}
+
+/* 📇 Cards get width, color, and rounded corners. */
+.card {
+  background:var(--primary-dark);
+  color: var(--primary-light);
+  width: 40%;
+  min-height: 150px;
+  color: var(--accent);
+  border-radius: 20px;
+}
+
+/* 📝 Center the text inside each card heading. */
+.card h2{
+  text-align: center;
+  color: var(--accent);
+}
+
+/* 🖼️ Images are sized and centered inside each card. */
+.card img{
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(42,5,96,.4);
+}
+
+
+/* 🏷️ The main heading is centered and easy to read. */
+h1{
+  color:var(--primary-light);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
