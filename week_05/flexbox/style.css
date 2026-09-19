@@ -15,8 +15,8 @@
 
 body {
   font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
-  background-color: #f4f0fa;
-  color: #2c2c2c;
+  background-color: #eaed8a;
+  color: #090136;
 }
 
 /* ============================================================
@@ -26,7 +26,7 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  background-color: #4b3190; /* 🏛️ Primary MCC Purple */
+  background-color: #a2191e; /* - */
   color: #f9f5f0;
   min-height: 400px;
 }
