@@ -1,12 +1,6 @@
-/* === BASE ===
-   * is the UNIVERSAL SELECTOR — it targets every single element on the page.
-   You haven't used it yet, but it works just like any other selector.
-   It's commonly used at the top of a stylesheet as a "reset" to wipe out the
-   default margin and padding browsers add to elements like <body> and <h1>.
-
-   box-sizing: border-box you already know from Week 4.
-   Putting it on * applies it to everything at once instead of
-   adding it to each selector individually. */
+/* 
+  box-sizing: border-box from Week 4.
+  Applied to everything here. */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,13 +9,12 @@
 
 body {
   font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
-  background-color: #eaed8a;
+  background-color: #edf09a;
   color: #090136;
 }
 
 /* ============================================================
    HERO — 50/50 Split
-   ℹ️ info: The Parent Container
    ============================================================ */
 .hero {
   display: flex;
@@ -32,20 +25,20 @@ body {
 }
 
 .hero-text {
-  flex-basis: 50%; /* ✅ YOUR ASSIGNMENT needs this */
+  flex-basis: 50%; 
   /* flex-grow controls how much EXTRA space an item eats up after flex-basis is set.
      flex-grow: 0 = don't grow, stay at your flex-basis size (the default)
      flex-grow: 1 = grow to fill remaining space
      flex-grow: 2 = grow twice as fast as a sibling with flex-grow: 1
-     Both children here are 1, so they share extra space equally — staying 50/50. */
-  flex-grow: 1; /* Bonus: not required for your assignment */
+      */
+  flex-grow: 1; 
   padding: 48px;
 }
 
 .hero-text h1 {
   font-size: 40px;
   margin-bottom: 16px;
-  color: #fdbb30; /* 🏆 Primary MCC Gold */
+  color: #e2fd30; 
 }
 
 .hero-text p {
@@ -55,7 +48,7 @@ body {
 }
 
 .hero-img {
-  flex-basis: 50%; /* ✅ YOUR ASSIGNMENT needs this */
+  flex-basis: 50%; /*  */
   flex-grow: 1; /* Same value as .hero-text = they grow equally, keeping the 50/50 split */
 }
 
@@ -64,29 +57,6 @@ body {
   display: block;
 }
 
-/* ============================================================
-   BUTTON GROUP
-   ⚠️ warning: Nesting — turning a flex ITEM into a flex CONTAINER
-   ============================================================ */
-.button-group {
-  display: flex; /* ℹ️ info: This child is now ALSO a flex container */
-  align-self: flex-start; /* 💡tip: Child overrides parent's align-items */
-}
-
-.button-group .btn {
-  background-color: #e8fd30; /*  */
-  color: #0d5db8; /* blue text */
-  text-decoration: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.button-group .btn:hover {
-  background-color: #e57920;
-}
 
 /* ============================================================
    PAGE WRAPPER — Sidebar + Content
@@ -118,9 +88,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* We added class="first-heading" to the first h3 in the HTML.
-   Later we'll learn :first-child which targets it automatically —
-   no extra class needed! */
 .sidebar .first-heading {
   margin-top: 0;
 }
@@ -135,9 +102,6 @@ body {
   border-bottom: 1px solid #c8dac9;
 }
 
-/* We added class="last-item" to the last <li> in each list.
-   Later we'll learn :last-child which targets it automatically —
-   no extra class needed! */
 .sidebar .last-item {
   border-bottom: none;
 }
@@ -157,9 +121,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* We added class="first-heading" to the first h2 in the HTML.
-   Later we'll learn :first-child which targets it automatically —
-   no extra class needed! */
+
 .content .first-heading {
   margin-top: 0;
 }
