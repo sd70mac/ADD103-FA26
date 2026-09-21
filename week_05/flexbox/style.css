@@ -59,8 +59,7 @@ body {
 
 
 /* ============================================================
-   PAGE WRAPPER — Sidebar + Content
-   ℹ️ THE WRAPPER
+   PAGE WRAPPER — Sidebar + Content in one container.
    ============================================================ */
 .page-wrapper {
   display: flex;
