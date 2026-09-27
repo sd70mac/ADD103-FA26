@@ -3,3 +3,10 @@
     columns: repeat(5, 1fr);
     gap: 10px;
 }
+.main-display{
+    grid-column: 1 / -1;
+    size: 400px;
+}
+.thumb{
+    
+}
