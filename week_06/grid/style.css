@@ -1,7 +1,7 @@
 .photo-wall {
     display: grid;
     /* Create 3 equal columns. */
-    columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 .img{
