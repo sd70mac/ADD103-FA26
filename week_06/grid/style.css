@@ -1,5 +1,6 @@
 .photo-wall {
     display: grid;
+    /* Create 3 equal columns. */
     columns: repeat(3, 1fr);
     gap: 15px;
 }
@@ -11,4 +12,9 @@
 
 .container div {
   background-color: white;
+}
+.card {
+    /* background: #f4f4f4; */
+    padding: 20px;
+    border: 1px solid #ddd;
 }
