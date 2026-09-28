@@ -5,8 +5,26 @@
 }
 .main-display{
     grid-column: 1 / -1;
+    width: 100%;
     height: 400px;
 }
+/* Styling the image inside the main display wrapper, as this actually changes the size. */
+.main-display img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+}
+
 .thumb{
+    width: 100%;
+    aspect-ratio: 1/1; /* Makes thumbnails responsive perfect squares */
     cursor: pointer;
+}
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
 }
