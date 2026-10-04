@@ -1,3 +1,10 @@
+/* 🎨 CSS variables store colors in one place. */
+:root{
+  --primary-dark: rgb(14, 23, 18);
+  --accent:rgb(5, 96, 63);
+  --primary-light: rgb(170, 184, 130);
+}
+
 /* Based on the Week 7A Example*/
 /* 1. DEFAULT (Mobile) */
 body {
@@ -30,7 +37,10 @@ body {
 }
 
 .card{
-
+width: 40%;
+  min-height: 150px;
+  color: var(--accent);
+  border-radius: 20px;
 }
 
 /* Square photo*/
