@@ -1,0 +1,21 @@
+/* Based on the Week 7A Example*/
+/* 1. DEFAULT (Mobile) */
+body {
+    background-color: white; /* Clean & Simple */
+    font-size: 16px;
+}
+
+/* 2. TABLET (Triggered at 768px) */
+@media (min-width: 768px) {
+    body {
+        background-color: lightcyan; /* Still a subtle change */
+        font-size: 22px; /* Bigger screens get bigger text */
+    }
+}
+
+/* 3. DESKTOP (Triggered at 992px) */
+@media (min-width: 992px) {
+    body {
+        background-color: red; /* Still a dramatic change */
+    }
+}
