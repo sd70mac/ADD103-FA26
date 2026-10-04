@@ -5,7 +5,16 @@ body {
     font-size: 16px;
 }
 
-/* 2. TABLET (Triggered at 768px) */
+/* 2. Landscape Mobile (Triggered at 576px) */
+@media (min-width: 576px) {
+    body {
+        background-color:  white; /* No change yet */
+        font-size: 22px; /* Bigger text for readability*/
+    }
+}
+
+
+/* 3. TABLET (Triggered at 768px) */
 @media (min-width: 768px) {
     body {
         background-color: lightcyan; /* Still a subtle change */
@@ -13,7 +22,7 @@ body {
     }
 }
 
-/* 3. DESKTOP (Triggered at 992px) */
+/* 4. DESKTOP (Triggered at 992px) */
 @media (min-width: 992px) {
     body {
         background-color: red; /* Still a dramatic change */
