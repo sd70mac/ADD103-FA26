@@ -1,0 +1,39 @@
+/* Based on example on the assignment page.*/
+/* MOBILE (Default) - 1 Column */
+.photo-wall {
+    display: grid;
+    /* Mobile: one column by default. */
+    /* I am using minmax because it allows me to avoid horizontal scrollbars, as they had begun to show up. */
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+}
+/* Tablet - 2 columns */
+@media (min-width: 600px) {
+    .photo-wall {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+/* Larger screens - 3 columns */
+@media (min-width: 900px) {
+    .photo-wall {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Desktop - 4 columns */
+@media (min-width: 1200px) {
+    .photo-wall {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: rgb(24, 167, 239);
+    padding: 20px;
+    border: 1px solid #ddd;
+}
