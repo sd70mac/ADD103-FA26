@@ -12,51 +12,51 @@ body {
     font-size: 16px;
 }
 
-/* 2. Landscape Mobile (Triggered at 576px) */
-@media (min-width: 576px) {
-    body {
-        background-color:  white; /* No change yet */
-        font-size: 22px; /* Bigger text for readability*/
-    }
-}
-
-
-/* 3. TABLET (Triggered at 768px) */
+/* 2. TABLET (Triggered at 768px) */
 @media (min-width: 768px) {
     body {
-        background-color: lightcyan; /* Still a subtle change */
-        font-size: 22px; /* Bigger screens get bigger text */
+        background-color: lavender;
+        font-size: 18px;
     }
 }
 
-/* 4. DESKTOP (Triggered at 992px) */
+/* 3. DESKTOP (Triggered at 992px) */
 @media (min-width: 992px) {
     body {
-        background-color: red; /* Still a dramatic change */
+        background-color: red;
     }
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1rem;
+    width: min(90%, 768px);
+    margin: 2rem auto;
+    padding: 1.5rem;
     color: var(--accent);
+    background-color: white;
     border-radius: 20px;
+    box-sizing: border-box;
 }
 
-/* Square photo*/
-.avatar{
-/* Will adjust */
+.avatar {
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 12px;
 }
 
-/* Name, Job Title, Bio */
-.info{
-/* Will adjust */
+.info {
     flex: 1;
     min-width: 0;
+}
+
+@media (min-width: 700px) {
+    .card {
+        flex-direction: row;
+        text-align: left;
+    }
 }
