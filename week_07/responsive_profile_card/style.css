@@ -15,7 +15,7 @@ body {
 /* 2. TABLET (Triggered at 768px) */
 @media (min-width: 768px) {
     body {
-        background-color: lavender;
+        background-color:  rgb(245, 231, 107) ;
         font-size: 18px;
     }
 }
@@ -37,7 +37,7 @@ body {
     margin: 2rem auto;
     padding: 1.5rem;
     color: var(--accent);
-    background-color: white;
+    background-color: var(--primary-light);
     border-radius: 20px;
     box-sizing: border-box;
 }
