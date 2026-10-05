@@ -1,3 +1,153 @@
+/* 
+  box-sizing: border-box from Week 4.
+  Applied to everything here. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
+  background-color: #edf09a;
+  color: #090136;
+}
+
+/* ============================================================
+   HERO — 50/50 Split
+   ============================================================ */
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: #a2191e; /* - */
+  color: #f9f5f0;
+  min-height: 400px;
+}
+
+.hero-text {
+  flex-basis: 50%; 
+  /* flex-grow controls how much EXTRA space an item eats up after flex-basis is set.
+     flex-grow: 0 = don't grow, stay at your flex-basis size (the default)
+     flex-grow: 1 = grow to fill remaining space
+     flex-grow: 2 = grow twice as fast as a sibling with flex-grow: 1
+      */
+  flex-grow: 1; 
+  padding: 48px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: #e2fd30; 
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero-img {
+  flex-basis: 50%; /*  */
+  flex-grow: 1; /* Same value as .hero-text = they grow equally, keeping the 50/50 split */
+}
+
+.hero-img img {
+  width: 100%;
+  display: block;
+}
+
+
+/* ============================================================
+   PAGE WRAPPER — Sidebar + Content in one container.
+   ============================================================ */
+.page-wrapper {
+  display: flex;
+  max-width: 1100px;
+  margin: 32px auto;
+  gap: 32px;
+  padding: 0 24px;
+}
+
+
+.sidebar h3 {
+  color: #2d5016;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.sidebar .first-heading {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 6px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #c8dac9;
+}
+
+.sidebar .last-item {
+  border-bottom: none;
+}
+
+/* ℹ️ THE CONTENT (Fluid Width) */
+.content {
+  background: white;
+  flex-grow: 1; /* Eat ALL the remaining space! */
+  padding: 32px;
+  border-radius: 6px;
+}
+
+.content h2 {
+  color: #2d5016;
+  font-size: 22px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+
+.content .first-heading {
+  margin-top: 0;
+}
+
+.content p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.content code {
+  font-family: "Courier New", monospace;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #2d5016;
+}
+
+.content .entity-list {
+  list-style: none;
+  margin: 8px 0 16px 0;
+  padding: 0;
+}
+
+.content .entity-list li {
+  padding: 6px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.content .entity-list a {
+  color: #2d5016;
+}
+
 /* Based on example on the assignment page.*/
 /* MOBILE (Default) - 1 Column */
 .photo-wall {
