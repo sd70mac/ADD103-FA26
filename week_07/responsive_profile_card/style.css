@@ -37,18 +37,26 @@ body {
 }
 
 .card{
-width: 40%;
-  min-height: 150px;
-  color: var(--accent);
-  border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--accent);
+    border-radius: 20px;
 }
 
 /* Square photo*/
 .avatar{
-
+/* Will adjust */
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Name, Job Title, Bio */
 .info{
-
+/* Will adjust */
+    flex: 1;
+    min-width: 0;
 }
