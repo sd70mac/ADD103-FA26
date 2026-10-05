@@ -23,7 +23,8 @@ body {
 /* 3. DESKTOP (Triggered at 992px) */
 @media (min-width: 992px) {
     body {
-        background-color: red;
+        background-color: rgb(247, 69, 69);
+        /* Still red, but contrast seems a bit better with it a bit brighter. */
     }
 }
 
