@@ -1,3 +1,21 @@
+:root {
+  /*Asked Copilot to give me variable names for my color palette.*/
+  --color-page-background: #edf09a;
+  --color-page-text: #090136;
+  --color-brand-background: #a2191e;
+  --color-on-brand: #f9f5f0;
+  --color-accent: #e2fd30;
+  --color-current-page: #bdbdbd;
+  --color-heading: #2d5016;
+  --color-sidebar-border: #c8dac9;
+  --color-content-background: white;
+  --color-content-text: #444;
+  --color-code-background: #f0f0f0;
+  --color-content-border: #eee;
+  --color-card-background: rgb(24, 167, 239);
+  --color-card-border: #ddd;
+}
+
 /* 
   box-sizing: border-box from Week 4.
   Applied to everything here. */
@@ -10,13 +28,13 @@
 
 body {
   font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
-  background-color: #edf09a;
-  color: #090136;
+  background-color: var(--color-page-background);
+  color: var(--color-page-text);
 }
 
 .site-nav {
   padding: 16px 24px;
-  background-color: #a2191e;
+  background-color: var(--color-brand-background);
 }
 
 .site-nav ul {
@@ -28,16 +46,16 @@ body {
 
 .site-nav a,
 .site-nav span {
-  color: #f9f5f0;
+  color: var(--color-on-brand);
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: #e2fd30;
+  color: var(--color-accent);
 }
 
 .site-nav span[aria-current="page"] {
-  color: #bdbdbd;
+  color: var(--color-current-page);
 }
 
 /* ============================================================
@@ -46,8 +64,8 @@ body {
 .hero {
   display: flex;
   align-items: center;
-  background-color: #a2191e; /* - */
-  color: #f9f5f0;
+  background-color: var(--color-brand-background); /* - */
+  color: var(--color-on-brand);
   min-height: 400px;
 }
 
@@ -65,7 +83,7 @@ body {
 .hero-text h1 {
   font-size: 40px;
   margin-bottom: 16px;
-  color: #e2fd30; 
+  color: var(--color-accent);
 }
 
 .hero-text p {
@@ -98,7 +116,7 @@ body {
 
 
 .sidebar h3 {
-  color: #2d5016;
+  color: var(--color-heading);
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -117,7 +135,7 @@ body {
 .sidebar li {
   padding: 6px 0;
   font-size: 14px;
-  border-bottom: 1px solid #c8dac9;
+  border-bottom: 1px solid var(--color-sidebar-border);
 }
 
 .sidebar .last-item {
@@ -126,14 +144,14 @@ body {
 
 /* ℹ️ THE CONTENT (Fluid Width) */
 .content {
-  background: white;
+  background: var(--color-content-background);
   flex-grow: 1; /* Eat ALL the remaining space! */
   padding: 32px;
   border-radius: 6px;
 }
 
 .content h2 {
-  color: #2d5016;
+  color: var(--color-heading);
   font-size: 22px;
   margin-top: 28px;
   margin-bottom: 10px;
@@ -147,16 +165,16 @@ body {
 .content p {
   line-height: 1.7;
   margin-bottom: 16px;
-  color: #444;
+  color: var(--color-content-text);
 }
 
 .content code {
   font-family: "Courier New", monospace;
-  background-color: #f0f0f0;
+  background-color: var(--color-code-background);
   padding: 2px 6px;
   border-radius: 3px;
   font-size: 14px;
-  color: #2d5016;
+  color: var(--color-heading);
 }
 
 .content .entity-list {
@@ -167,12 +185,12 @@ body {
 
 .content .entity-list li {
   padding: 6px 10px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-content-border);
   font-size: 15px;
 }
 
 .content .entity-list a {
-  color: #2d5016;
+  color: var(--color-heading);
 }
 
 /* Based on example on the assignment page.*/
@@ -210,7 +228,7 @@ img {
 }
 
 .card {
-    background-color: rgb(24, 167, 239);
+    background-color: var(--color-card-background);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-card-border);
 }
