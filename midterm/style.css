@@ -12,7 +12,7 @@
   --color-content-text: #444;
   --color-code-background: #f0f0f0;
   --color-content-border: #eee;
-  --color-card-background: rgb(24, 167, 239);
+  --color-card-background: rgb(24, 67, 239);
   --color-card-border: #ddd;
 }
 
@@ -103,7 +103,7 @@ body > ol {
 }
 
 .hero-img img {
-  width: 100%;
+  width: 50%;
   display: block;
 }
 
@@ -236,4 +236,7 @@ img {
     background-color: var(--color-card-background);
     padding: 20px;
     border: 1px solid var(--color-card-border);
+}
+.avatar {
+  max-width: 30%;
 }
