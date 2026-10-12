@@ -13,6 +13,32 @@ body {
   color: #090136;
 }
 
+.site-nav {
+  padding: 16px 24px;
+  background-color: #a2191e;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+}
+
+.site-nav a,
+.site-nav span {
+  color: #f9f5f0;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: #e2fd30;
+}
+
+.site-nav span[aria-current="page"] {
+  color: #bdbdbd;
+}
+
 /* ============================================================
    HERO — 50/50 Split
    ============================================================ */
