@@ -108,7 +108,7 @@ main > ul {
 }
 
 .hero-img {
-  flex-basis: 50%; /*  */
+  flex-basis: 70%; /*  */
   flex-grow: 1; /* Same value as .hero-text = they grow equally, keeping the 50/50 split */
 }
 
