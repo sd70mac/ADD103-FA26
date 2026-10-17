@@ -54,6 +54,11 @@ body > ol {
   padding-left: 40px;
 }
 
+main > ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
 .site-nav a,
 .site-nav span {
   color: var(--color-on-brand);
