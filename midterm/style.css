@@ -5,7 +5,7 @@
   --color-brand-background: #a2191e;
   --color-on-brand: #f9f5f0;
   --color-accent: #e2fd30;
-  --color-current-page: #bdbdbd;
+  --color-current-page: #c7c7c7;
   --color-heading: #2d5016;
   --color-sidebar-border: #c8dac9;
   --color-content-background: white;
@@ -30,6 +30,11 @@ body {
   font-family: 'Segoe UI', 'Open Sans', Arial, sans-serif;
   background-color: var(--color-page-background);
   color: var(--color-page-text);
+}
+
+body.about-page {
+  --color-page-text: #080033;
+  --color-card-background: #34c7ef; /* Overrode background to fix contrast. The color is inspired by the old RTA blue from pre-Metra days, and the Rock Island 'Bankruptcy Blue'.*/
 }
 
 .site-nav {
