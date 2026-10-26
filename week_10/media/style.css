@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.hero-video {
+    display: block;
+    width: 100%;
+    height: clamp(240px, 55vw, 620px);
+    object-fit: cover;
+    object-position: center;
+    background-color: #222;
+}
