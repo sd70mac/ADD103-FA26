@@ -1,9 +1,6 @@
-function change(button) {
-    const thumbnail = button.querySelector("img");
-    const largeImage = document.getElementById("large");
-    largeImage.src = thumbnail.src;
-    largeImage.alt = thumbnail.alt;
-    document.getElementById("caption").textContent = thumbnail.alt;
+function change(picture, text) {
+    document.getElementById("large").src = picture;
+    document.getElementById("caption").textContent = text;
 }
 
 function setBgColor(color) {
