@@ -10,6 +10,7 @@
 <body>
     <main>
         <h1>A Little Visual Star Story</h1>
+        <!-- This animation tells a really simple story visually.  It is just meant to be a fun and nostalgic demo that shows some of the possibilities of CSS animation while being soothing and cute.-->
         <section class="story-scene bg-pan-left" aria-label="A gold star appears, spins, beats like a heart, and flies away.">
             <div class="star-sequence" aria-hidden="true">
                 <div class="slide-in-top">
@@ -56,12 +57,11 @@
                     element.classList.remove(className);
                 });
             });
-            animatedElements.forEach((element) => {
-                element.offsetWidth;
-            });
-            animatedElements.forEach((element, index) => {
-                classesByElement[index].forEach((className) => {
-                    element.classList.add(className);
+            requestAnimationFrame(() => {
+                animatedElements.forEach((element, index) => {
+                    classesByElement[index].forEach((className) => {
+                        element.classList.add(className);
+                    });
                 });
             });
         });
