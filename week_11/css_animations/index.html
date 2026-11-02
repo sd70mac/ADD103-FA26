@@ -3,15 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A Little Visual Star Story</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--I was inspired by Homestar Runner to animate a five-pointed star.-->
-    
+    <main>
+        <h1>A Little Visual Star Story</h1>
+        <section class="story-scene bg-pan-left" aria-label="A gold star appears, spins, beats like a heart, and flies away.">
+            <div class="star-sequence" aria-hidden="true">
+                <div class="slide-in-top">
+                    <div class="rotate-center">
+                        <div class="heartbeat">
+                            <div class="slide-out-right">
+                                <img src="gold-star.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ending">
+                <h2 class="text-focus-in">The End.</h2>
+                <button class="replay-button text-focus-in" type="button">Again?</button>
+            </div>
+        </section>
+    </main>
     <footer>
-            <br>
-                © Copyright 2026 SD70MAC.
-            <br> <a href="../../index.html">Back to Student Portal</a>
-        </footer>
+        <p>© Copyright 2026 SD70MAC.</p>
+        <a href="../../index.html">Back to Student Portal</a>
+    </footer>
+    <script>
+        const scene = document.querySelector(".story-scene");
+        const replayButton = document.querySelector(".replay-button");
+        const animationClasses = [
+            "bg-pan-left",
+            "slide-in-top",
+            "rotate-center",
+            "heartbeat",
+            "slide-out-right",
+            "text-focus-in"
+        ];
+        const animatedElements = Array.from(
+            scene.querySelectorAll(animationClasses.map((className) => `.${className}`).join(", "))
+        );
+        const classesByElement = animatedElements.map((element) =>
+            animationClasses.filter((className) => element.classList.contains(className))
+        );
+
+        replayButton.addEventListener("click", () => {
+            animatedElements.forEach((element, index) => {
+                classesByElement[index].forEach((className) => {
+                    element.classList.remove(className);
+                });
+            });
+            animatedElements.forEach((element) => {
+                element.offsetWidth;
+            });
+            animatedElements.forEach((element, index) => {
+                classesByElement[index].forEach((className) => {
+                    element.classList.add(className);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
