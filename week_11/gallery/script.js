@@ -3,6 +3,7 @@ function change(button) {
     const largeImage = document.getElementById("large");
     largeImage.src = thumbnail.src;
     largeImage.alt = thumbnail.alt;
+    document.getElementById("caption").textContent = thumbnail.alt;
 }
 
 function setBgColor(color) {

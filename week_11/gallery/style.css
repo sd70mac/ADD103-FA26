@@ -61,6 +61,7 @@ body.dark-mode .color-toolbar button {
     grid-column: 1 / -1;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 /* Styling the image inside the main display wrapper, as this actually changes the size. */
 .main-display img {
@@ -70,6 +71,11 @@ body.dark-mode .color-toolbar button {
     display: block;
     margin: 0 auto;
     border-radius: 4px;
+}
+
+.main-display figcaption {
+    max-width: 1200px;
+    margin: 8px auto 0;
 }
 
 .thumb{
