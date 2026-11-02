@@ -6,8 +6,8 @@ function change(button) {
 }
 
 function setBgColor(color) {
-    document.body.classList.remove("dark-mode");
     document.body.style.backgroundColor = color;
+    document.body.classList.remove("dark-mode");
 }
 
 function setDarkMode() {
