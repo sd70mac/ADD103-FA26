@@ -9,18 +9,38 @@
 </head>
 <body>
     <h1>Grid Gallery</h1>
+    <section class="color-toolbar" aria-labelledby="color-toolbar-heading">
+        <h2 id="color-toolbar-heading">Background color</h2>
+        <div class="color-options">
+            <button type="button" onclick="setBgColor('#ffffff')">White</button>
+            <button type="button" onclick="setBgColor('#ffff00')">Yellow</button>
+            <button type="button" onclick="setBgColor('#ff0000')">Red</button>
+            <button type="button" onclick="setBgColor('#87ceeb')">Sky blue</button>
+            <button type="button" onclick="setBgColor('#ffc0cb')">Pink</button>
+            <button type="button" onclick="setDarkMode()">Dark mode</button>
+        </div>
+        <form id="custom-color-form">
+            <label for="custom-color">Custom hex color</label>
+            <input id="custom-color" name="custom-color" type="text" placeholder="#RRGGBB" maxlength="7" aria-describedby="custom-color-message">
+            <button type="submit">Apply color</button>
+            <span id="custom-color-message" role="status" aria-live="polite"></span>
+        </form>
+    </section>
     <div class="gallery-container">
-        <div class="main-display"><img src="../gallery/thumb2.jpeg" alt="Two Sandhill cranes in a grassy area at Calvary Cemetery in Woodstock, Illinois, with a quiet cemetery landscape in the background."></div>
-        <div class="thumb"><img src="../gallery/thumb1.jpeg" alt="A groundhog lying next to a dark stone entrance sign at Calvary Cemetery in Woodstock, Illinois."></div>
-        <div class="thumb"><img src="../gallery/thumb7.jpeg" alt="A rabbit facing away from the camera on a sidewalk next to some green grass near Clarence Olson School."></div>
-        <div class="thumb"><img src="../gallery/thumb3.jpeg" alt="A different view of Two Sandhill cranes in a grassy area at Calvary Cemetery in Woodstock, Illinois."></div>
-        <div class="thumb"><img src="../gallery/thumb4.jpeg" alt="A rabbit facing toward the camera on a sidewalk next to some green grass near Clarence Olson School."></div>
-        <div class="thumb"><img src="../gallery/thumb5.jpeg" alt="An egret near a park bench next to the pond in Emricson Park."></div>
+        <div class="main-display"><img id="large" src="images/thumb2.jpeg" alt="Two Sandhill cranes in a grassy area at Calvary Cemetery in Woodstock, Illinois, with a quiet cemetery landscape in the background."></div>
+        <button class="thumb" type="button" onclick="change(this)"><img src="images/thumb1.jpeg" alt="A groundhog lying next to a dark stone entrance sign at Calvary Cemetery in Woodstock, Illinois."></button>
+        <button class="thumb" type="button" onclick="change(this)"><img src="images/thumb2.jpeg" alt="Two Sandhill cranes in a grassy area at Calvary Cemetery in Woodstock, Illinois, with a quiet cemetery landscape in the background."></button>
+        <button class="thumb" type="button" onclick="change(this)"><img src="images/thumb3.jpeg" alt="A different view of Two Sandhill cranes in a grassy area at Calvary Cemetery in Woodstock, Illinois."></button>
+        <button class="thumb" type="button" onclick="change(this)"><img src="images/thumb4.jpeg" alt="A rabbit facing toward the camera on a sidewalk next to some green grass near Clarence Olson School."></button>
+        <button class="thumb" type="button" onclick="change(this)"><img src="images/thumb5.jpeg" alt="An egret near a park bench next to the pond in Emricson Park."></button>
+        <button class="thumb" type="button" onclick="change(this)"><img src="images/thumb6.jpeg" alt="An egret and two geese in the grass near the pond at Emricson Park."></button>
+        <button class="thumb" type="button" onclick="change(this)"><img src="images/thumb7.jpeg" alt="A rabbit facing away from the camera on a sidewalk next to some green grass near Clarence Olson School."></button>
     </div>
     <footer>
         <br>
         © Copyright 2026 SD70MAC.
         <br> <a href="../../index.html">Back to Student Portal</a>
     </footer>
+    <script src="gallery.js"></script>
 </body>
 </html>

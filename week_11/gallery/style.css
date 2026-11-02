@@ -1,7 +1,61 @@
+body {
+    background-color: yellow;
+}
+
+body.dark-mode,
+body.dark-mode * {
+    color: #ffff00;
+}
+
+body.dark-mode {
+    background-color: #00008b;
+}
+
+body.dark-mode .color-toolbar button {
+    background-color: #4a4a4a;
+    color: #ffff00;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow:
+        1px 1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px -1px 0 #000000;
+}
+
+.color-toolbar {
+    margin-bottom: 20px;
+}
+
+.color-toolbar h2 {
+    font-size: 1.25rem;
+}
+
+.color-options,
+#custom-color-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.color-toolbar button {
+    padding: 8px 14px;
+    font-size: 1.2rem;
+}
+
+#custom-color-form input {
+    width: 110px;
+}
+
+#custom-color-message {
+    flex-basis: 100%;
+}
+
 .gallery-container{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
 }
 .main-display{
     grid-column: 1 / -1;
@@ -21,10 +75,20 @@
     width: 100%;
     aspect-ratio: 1/1; /* Makes thumbnails responsive perfect squares */
     cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: none;
 }
 .thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
 }
