@@ -1,3 +1,4 @@
+
 :root {
   /*Asked Copilot to give me variable names for my color palette.*/
   --color-page-background: #edf09a;
@@ -14,4 +15,9 @@
   --color-content-border: #eee;
   --color-card-background: rgb(24, 67, 239);
   --color-card-border: #ddd;
+  
+  font-family: "Noto Serif Display", serif;
+}
+body {
+  font-family: "Audiowide", sans-serif;
 }
