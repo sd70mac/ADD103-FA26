@@ -16,8 +16,11 @@
   --color-card-background: rgb(24, 67, 239);
   --color-card-border: #ddd;
   
-  font-family: "Noto Serif Display", serif;
+  font-family: "Audiowide", sans-serif;
 }
 body {
   font-family: "Audiowide", sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Noto Serif Display", serif;
 }
