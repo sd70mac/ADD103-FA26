@@ -98,6 +98,25 @@ main > ul {
   outline-offset: 3px;
 }
 
+.tutorial-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.tutorial-progress progress {
+  flex: 1;
+  height: 1rem;
+  accent-color: var(--color-brand-background);
+}
+
+.tutorial-progress span {
+  min-width: 3.5rem;
+  color: var(--color-page-text);
+  font-weight: 700;
+}
+
 /* ============================================================
    HERO — 50/50 Split
    ============================================================ */
@@ -233,6 +252,10 @@ main > ul {
   color: var(--color-heading);
 }
 
+footer a {
+  color: var(--color-heading);
+}
+
 /* Based on example on the assignment page.*/
 /* MOBILE (Default) - 1 Column */
 .photo-wall {
@@ -242,6 +265,13 @@ main > ul {
     grid-template-columns: minmax(0, 1fr);
     gap: 20px;
 }
+
+.photo-grid > .figure {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
 /* Tablet - 2 columns */
 @media (min-width: 600px) {
     .photo-wall {
