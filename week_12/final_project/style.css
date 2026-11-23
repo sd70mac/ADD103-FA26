@@ -297,6 +297,15 @@ img {
     height: auto;
 }
 
+.hero-video {
+  display: block;
+  width: 100%;
+  height: clamp(240px, 55vw, 620px);
+  object-fit: cover;
+  object-position: center;
+  background-color: #222;
+}
+
 .card {
     background-color: var(--color-card-background);
     padding: 20px;
