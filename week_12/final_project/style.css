@@ -252,7 +252,8 @@ main > ul {
   color: var(--color-heading);
 }
 
-footer a {
+footer a,
+.multimedia-video-link {
   color: var(--color-heading);
 }
 
