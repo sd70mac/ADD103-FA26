@@ -628,3 +628,30 @@ img {
     opacity: 1;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-page-background: #171717;
+    --color-page-text: #f5f5f5;
+    --color-brand-background: #711217;
+    --color-on-brand: #ffffff;
+    --color-accent: #efff72;
+    --color-current-page: #d7d7d7;
+    --color-heading: #b7d990;
+    --color-sidebar-border: #4a4a4a;
+    --color-content-background: #242424;
+    --color-content-text: #dddddd;
+    --color-code-background: #343434;
+    --color-content-border: #454545;
+    --color-card-border: #555555;
+  }
+
+  body.about-page {
+    --color-page-text: #ffffff;
+    --color-card-background: #267c9c;
+  }
+}
+
+:root[data-theme="dark"] {
+  /* Same dark-mode variables here */
+}
