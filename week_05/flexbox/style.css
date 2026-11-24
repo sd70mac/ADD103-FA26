@@ -18,6 +18,7 @@ body {
    ============================================================ */
 .hero {
   display: flex;
+  flex-wrap: wrap; /* Fixes Safety: prevents horizontal overflow */
   align-items: center;
   background-color: #a2191e; /* - */
   color: #f9f5f0;
@@ -63,6 +64,7 @@ body {
    ============================================================ */
 .page-wrapper {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1100px;
   margin: 32px auto;
   gap: 32px;
